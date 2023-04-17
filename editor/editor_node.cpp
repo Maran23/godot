@@ -2321,8 +2321,6 @@ void EditorNode::_edit_current(bool p_skip_foreign) {
 		return;
 	}
 
-	Object *prev_inspected_object = InspectorDock::get_inspector_singleton()->get_edited_object();
-
 	bool disable_folding = bool(EDITOR_GET("interface/inspector/disable_folding"));
 	bool is_resource = current_obj->is_class("Resource");
 	bool is_node = current_obj->is_class("Node");
@@ -2428,11 +2426,6 @@ void EditorNode::_edit_current(bool p_skip_foreign) {
 		NodeDock::get_singleton()->set_node(nullptr);
 		SceneTreeDock::get_singleton()->set_selected(selected_node);
 		InspectorDock::get_singleton()->update(nullptr);
-	}
-
-	if (current_obj == prev_inspected_object) {
-		// Make sure inspected properties are restored.
-		InspectorDock::get_inspector_singleton()->update_tree();
 	}
 
 	InspectorDock::get_singleton()->set_info(

@@ -1,0 +1,30 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="godot-test" type="CppProject" factoryName="C++ Project">
+    <configuration_1>
+      <option name="CONFIGURATION" value="editor" />
+      <option name="PLATFORM" value="Win32" />
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/godot.vcxproj" />
+      <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+      <option name="EXE_PATH" value="$(LocalDebuggerCommand)" />
+      <option name="PROGRAM_PARAMETERS" value="--test --test-case=*[PopupMenu]*" />
+      <option name="WORKING_DIRECTORY" value="$(LocalDebuggerWorkingDirectory)" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+    </configuration_1>
+    <configuration_2>
+      <option name="CONFIGURATION" value="editor" />
+      <option name="PLATFORM" value="x64" />
+      <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/godot.vcxproj" />
+      <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
+      <option name="EXE_PATH" value="$(TargetPath)" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$(ProjectDir)" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+    </configuration_2>
+    <option name="DEFAULT_PROJECT_PATH" value="" />
+    <method v="2">
+      <option name="Build" />
+    </method>
+  </configuration>
+</component>
